@@ -1,0 +1,107 @@
+[
+    {
+        "title":  "Combo 1",
+        "images": "blocks",
+        "questionAnswered": 1,
+        "level": "facil",
+        "question": [
+            {
+                "title": "Pergunta teste 1", 
+                "awnsers": [
+                    {"title": "Resposta errada teste"},
+                    {"title": "Resposta errada teste"},
+                    {"title": "Resposta correta teste", "isRight": true},
+                    {"title": "Resposta errada teste"}
+                ]
+            } ,
+            {
+                "title": "Pergunta teste 2", 
+                "awnsers": [
+                    {"title": "Resposta errada teste"},
+                    {"title": "Resposta errada teste"},
+                    {"title": "Resposta correta teste", "isRight": true},
+                    {"title": "Resposta errada teste"}
+                ]
+            }
+        ]
+    },
+    {
+        "title":  "Combo 2",
+        "images": "blocks",
+        "questionAnswered": 1,
+        "level": "medio",
+        "question": [
+            {
+                "title": "Pergunta teste 1", 
+                "awnsers": [
+                    {"title": "Resposta errada teste"},
+                    {"title": "Resposta errada teste"},
+                    {"title": "Resposta correta teste", "isRight": true},
+                    {"title": "Resposta errada teste"}
+                ]
+            } ,
+            {
+                "title": "Pergunta teste 2", 
+                "awnsers": [
+                    {"title": "Resposta errada teste"},
+                    {"title": "Resposta correta teste", "isRight": true},
+                    {"title": "Resposta errada teste"},
+                    {"title": "Resposta errada teste"}
+                ]
+            }
+        ]
+    },
+    {
+        "title":  "Combo 3",
+        "images": "blocks",
+        "questionAnswered": 1,
+        "level": "dificil",
+        "question": [
+            {
+                "title": "Pergunta teste 1", 
+                "awnsers": [
+                    {"title": "Resposta errada teste"},
+                    {"title": "Resposta errada teste"},
+                    {"title": "Resposta correta teste", "isRight": true},
+                    {"title": "Resposta errada teste"}
+                ]
+            } ,
+            {
+                "title": "Pergunta teste 2", 
+                "awnsers": [
+                    {"title": "Resposta correta teste", "isRight": true},
+                    {"title": "Resposta errada teste"},
+                    {"title": "Resposta correta teste"},
+                    {"title": "Resposta errada teste"}
+                ]
+            }
+        ]
+    },
+    {
+        "title":  "Combo 4",
+        "images": "blocks",
+        "questionAnswered": 1,
+        "level": "perito",
+        "question": [
+            {
+                "title": "Pergunta teste 1", 
+                "awnsers": [
+                    {"title": "Resposta errada teste"},
+                    {"title": "Resposta correta teste", "isRight": true},
+                    {"title": "Resposta errada teste"},
+                    {"title": "Resposta errada teste"}
+                ]
+            } ,
+            {
+                "title": "Pergunta teste 2", 
+                "awnsers": [
+                    {"title": "Resposta errada teste"},
+                    {"title": "Resposta errada teste"},                    
+                    {"title": "Resposta errada teste"},
+                    {"title": "Resposta correta teste", "isRight": true}
+                ]
+            }
+        ]
+    }          
+              
+]
