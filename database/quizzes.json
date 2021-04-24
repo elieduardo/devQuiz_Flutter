@@ -27,7 +27,7 @@
     },
     {
         "title":  "Combo 2",
-        "images": "blocks",
+        "images": "laptop",
         "questionAnswered": 1,
         "level": "medio",
         "question": [
@@ -53,7 +53,7 @@
     },
     {
         "title":  "Combo 3",
-        "images": "blocks",
+        "images": "hierarchy",
         "questionAnswered": 1,
         "level": "dificil",
         "question": [
@@ -79,7 +79,7 @@
     },
     {
         "title":  "Combo 4",
-        "images": "blocks",
+        "images": "data",
         "questionAnswered": 1,
         "level": "perito",
         "question": [
