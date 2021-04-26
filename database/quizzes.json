@@ -1,13 +1,13 @@
 [
     {
-        "title":  "Combo 1",
+        "title":  "Widgets",
         "images": "blocks",
         "questionAnswered": 1,
         "level": "facil",
         "question": [
             {
                 "title": "Pergunta teste 1", 
-                "awnsers": [
+                "answers": [
                     {"title": "Resposta errada teste"},
                     {"title": "Resposta errada teste"},
                     {"title": "Resposta correta teste", "isRight": true},
@@ -16,7 +16,7 @@
             } ,
             {
                 "title": "Pergunta teste 2", 
-                "awnsers": [
+                "answers": [
                     {"title": "Resposta errada teste"},
                     {"title": "Resposta errada teste"},
                     {"title": "Resposta correta teste", "isRight": true},
@@ -26,14 +26,14 @@
         ]
     },
     {
-        "title":  "Combo 2",
+        "title":  "Componentes",
         "images": "laptop",
         "questionAnswered": 1,
         "level": "medio",
         "question": [
             {
                 "title": "Pergunta teste 1", 
-                "awnsers": [
+                "answers": [
                     {"title": "Resposta errada teste"},
                     {"title": "Resposta errada teste"},
                     {"title": "Resposta correta teste", "isRight": true},
@@ -42,7 +42,7 @@
             } ,
             {
                 "title": "Pergunta teste 2", 
-                "awnsers": [
+                "answers": [
                     {"title": "Resposta errada teste"},
                     {"title": "Resposta correta teste", "isRight": true},
                     {"title": "Resposta errada teste"},
@@ -52,14 +52,14 @@
         ]
     },
     {
-        "title":  "Combo 3",
+        "title":  "Bibliotecas",
         "images": "hierarchy",
         "questionAnswered": 1,
         "level": "dificil",
         "question": [
             {
                 "title": "Pergunta teste 1", 
-                "awnsers": [
+                "answers": [
                     {"title": "Resposta errada teste"},
                     {"title": "Resposta errada teste"},
                     {"title": "Resposta correta teste", "isRight": true},
@@ -68,7 +68,7 @@
             } ,
             {
                 "title": "Pergunta teste 2", 
-                "awnsers": [
+                "answers": [
                     {"title": "Resposta correta teste", "isRight": true},
                     {"title": "Resposta errada teste"},
                     {"title": "Resposta correta teste"},
@@ -78,14 +78,14 @@
         ]
     },
     {
-        "title":  "Combo 4",
+        "title":  "Curiosidadese",
         "images": "data",
         "questionAnswered": 1,
         "level": "perito",
         "question": [
             {
                 "title": "Pergunta teste 1", 
-                "awnsers": [
+                "answers": [
                     {"title": "Resposta errada teste"},
                     {"title": "Resposta correta teste", "isRight": true},
                     {"title": "Resposta errada teste"},
@@ -94,7 +94,7 @@
             } ,
             {
                 "title": "Pergunta teste 2", 
-                "awnsers": [
+                "answers": [
                     {"title": "Resposta errada teste"},
                     {"title": "Resposta errada teste"},                    
                     {"title": "Resposta errada teste"},

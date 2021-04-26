@@ -1,6 +1,6 @@
 import 'package:DevQuiz/core/app_gradients.dart';
 import 'package:DevQuiz/core/app_images.dart';
-import 'package:DevQuiz/home/home_page.dart';
+import 'package:DevQuiz/login/login_widget.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatelessWidget {
@@ -8,7 +8,7 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     Future.delayed(Duration(seconds: 2)).then((_) => Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => HomePage()),
+          MaterialPageRoute(builder: (context) => LoginWidget()),
         ));
     return Scaffold(
       body: Container(

@@ -1,4 +1,5 @@
 import 'package:DevQuiz/core/core.dart';
+import 'package:DevQuiz/home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -26,20 +27,70 @@ class _LoginWidgetState extends State<LoginWidget> {
                 child: Image.asset(AppImages.logo),
               ),
               SizedBox(
-                height: 24,
+                height: 50,
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 35),
-                child: TextField(
-                  decoration: InputDecoration(
-                      hintText: "Usuário do GitHub", hoverColor: Colors.black),
-                  onChanged: (value) {
-                    _userName = value;
-                  },
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      AppImages.github,
+                      height: 60,
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Text.rich(
+                      TextSpan(
+                          text: "Faça login utilizando\n",
+                          style: GoogleFonts.notoSans(
+                            color: AppColors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                          ),
+                          children: [
+                            TextSpan(
+                                text: "seu ",
+                                style: GoogleFonts.notoSans(
+                                  color: AppColors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w400,
+                                )),
+                            TextSpan(
+                                text: "GitHub",
+                                style: GoogleFonts.notoSans(
+                                  color: AppColors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                          ]),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
                 ),
               ),
-              SizedBox(
-                height: 24,
+              Padding(
+                padding: const EdgeInsets.all(30),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(28),
+                    color: Colors.white,
+                    border: Border.fromBorderSide(
+                      BorderSide(color: AppColors.border),
+                    ),
+                  ),
+                  child: TextField(
+                    textAlign: TextAlign.center,
+                    decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: "Digite seu username",
+                        hintStyle: GoogleFonts.notoSans(fontSize: 16),
+                        hoverColor: Colors.black),
+                    onChanged: (value) {
+                      _userName = value.trim();
+                    },
+                  ),
+                ),
               ),
               TextButton(
                 child: Container(
@@ -49,17 +100,27 @@ class _LoginWidgetState extends State<LoginWidget> {
                       border: Border.fromBorderSide(
                           BorderSide(color: AppColors.border))),
                   child: Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 26, vertical: 6),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 50, vertical: 10),
                     child: Text(
                       "Acessar",
                       style: GoogleFonts.notoSans(
-                          color: AppColors.black, fontSize: 13),
+                          color: AppColors.black, fontSize: 15),
                     ),
                   ),
                 ),
                 onPressed: () {
-                  print(_userName);
+                  if (_userName.trim() != "") {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                HomePage(userName: _userName)));
+                  } else {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text("Digite seu username")),
+                    );
+                  }
                 },
               )
             ],

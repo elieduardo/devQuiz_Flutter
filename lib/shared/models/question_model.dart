@@ -4,23 +4,23 @@ import 'package:DevQuiz/shared/models/awnser_model.dart';
 
 class QuestionModel {
   final String title;
-  final List<AwnserModel> awnsers;
+  final List<AwnserModel> answers;
 
-  QuestionModel({required this.title, required this.awnsers})
-      : assert(awnsers.length == 4);
+  QuestionModel({required this.title, required this.answers})
+      : assert(answers.length == 4);
 
   Map<String, dynamic> toMap() {
     return {
       'title': title,
-      'awnsers': awnsers.map((x) => x.toMap()).toList(),
+      'answers': answers.map((x) => x.toMap()).toList(),
     };
   }
 
   factory QuestionModel.fromMap(Map<String, dynamic> map) {
     return QuestionModel(
       title: map['title'],
-      awnsers: List<AwnserModel>.from(
-          map['awnsers']?.map((x) => AwnserModel.fromMap(x))),
+      answers: List<AwnserModel>.from(
+          map['answers']?.map((x) => AwnserModel.fromMap(x))),
     );
   }
 

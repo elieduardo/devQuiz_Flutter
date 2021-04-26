@@ -14,9 +14,11 @@ class HomeController {
 
   final repository = HomeRepository();
 
-  void getUser() async {
+  void getUser(String userName) async {
     state = HomeState.loading;
     user = await repository.getUser();
+    user!.name = userName;
+    user!.photoUrl = "https://github.com/" + userName + ".png";
     state = HomeState.success;
   }
 

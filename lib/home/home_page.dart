@@ -8,6 +8,12 @@ import 'package:DevQuiz/home/widgets/quiz_card/quiz_card_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
+  final String userName;
+
+  const HomePage({
+    required this.userName,
+  });
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -17,7 +23,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    controller.getUser();
+    controller.getUser(widget.userName);
     controller.getQuizzes();
     controller.stateNotifier.addListener(() {
       setState(() {});

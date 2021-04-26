@@ -1,6 +1,6 @@
 # dev_quiz
 
-A new Flutter project.
+Project created during the NLW5 with the Flutter.
 
 ## Getting Started
 
